@@ -29,6 +29,7 @@ export default function Page() {
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
+                // style={{ fo}}
               />
             </div>
             <div className="flex-col">
@@ -119,7 +120,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="text-3xl font-bold tracking-tighter sm:text-5xl" style={{ fontSize:"2.5rem"}}>
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
