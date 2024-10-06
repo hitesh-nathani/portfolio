@@ -1366,7 +1366,7 @@ body {
   width: max-content;
 }
 .max-w-2xl {
-  max-width: 66rem;
+  max-width: 66rem !important;
 }
 .max-w-\[600px\] {
   max-width: 600px;
