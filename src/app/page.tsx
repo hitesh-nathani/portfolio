@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="mx-auto w-full max-w-2xl">
           <div
             className={`flex flex-col-reverse flex-1 gap-6 md:flex-row md:gap-6`}
           >
