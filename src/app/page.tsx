@@ -2,6 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import TextAnimation from "@/components/TextAnimation";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -19,12 +20,14 @@ export default function Page() {
             className={`flex flex-col-reverse flex-1 gap-6 md:flex-row md:gap-6`}
           >
             <div className="flex-col flex flex-1 gap-6">
-              <BlurFadeText
+              {/* <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
+              /> */}
+
+              <TextAnimation text={`Hi, I'm ${DATA.name.split(" ")[0]}`} />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -120,7 +123,10 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="text-3xl font-bold tracking-tighter sm:text-5xl" style={{ fontSize:"2.5rem"}}>
+                <div
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl"
+                  style={{ fontSize: "2.5rem" }}
+                >
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
